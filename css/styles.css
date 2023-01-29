@@ -1,0 +1,116 @@
+/* font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif; */
+
+:root {
+  --primary-accent-color: #ffffff;
+  --primary-brand: #4d5ae5;
+  --primary-pressed-state: #404bbf;
+  --body-text: #2e2f42;
+  --filter-selectors-bg: #f4f4fd;
+  --filter-selectors-borders: #e7e9fc;
+}
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Header */
+CSS .header-links:hover,
+.header-links:focus,
+.header-links.current {
+  color: var(--primary-pressed-state);
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  color: var(--body-text);
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo-part {
+  color: var(--primary-brand);
+}
+
+.header-list {
+  list-style-type: none;
+}
+.header-links {
+  color: var(--body-text);
+  text-decoration: none;
+}
+.header-links:hover {
+  color: var(--primary-pressed-state);
+}
+.adress-list a {
+  text-decoration: none;
+}
+.adress-items {
+  color: var(--body-text);
+}
+
+/* Main */
+.hero {
+  background-color: var(--body-text);
+}
+.hero-header {
+  color: var(--primary-accent-color);
+}
+.button {
+  font-family: inherit;
+  color: var(--primary-accent-color);
+}
+.btn-primary {
+  background: var(--primary-brand);
+}
+.btn-primary:hover {
+  background: var(--primary-pressed-state);
+}
+/* Footer */
+.footer-studio {
+  background-color: var(--body-text);
+  color: var(--primary-accent-color);
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  color: var(--primary-accent-color);
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* Portfolio */
+.fillter-items {
+  list-style-type: none;
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.filter-selectors {
+  color: var(--primary-brand);
+  background-color: var(--filter-selectors-bg);
+  border: 1px solid var(--filter-selectors-borders);
+}
+.filter-selectors:hover {
+  color: var(--primary-accent-color);
+  background-color: var(--primary-pressed-state);
+}
