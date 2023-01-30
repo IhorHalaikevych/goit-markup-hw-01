@@ -9,32 +9,55 @@
   --body-text: #2e2f42;
   --filter-selectors-bg: #f4f4fd;
   --filter-selectors-borders: #e7e9fc;
+  --adress-text-color:#434455;
 }
-body {
-  font-family: "Roboto";
+address {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+}
+a{
+  text-decoration: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  color: var(--body-text);
+  background-color: var(--primary-accent-color);
+  
+}
+
+
+
+
+
 /* Header */
-CSS .header-links:hover,
+
+
+
+
+
+.header-links:hover,
 .header-links:focus,
 .header-links.current {
   color: var(--primary-pressed-state);
 }
 
 .list {
+  
   list-style: none;
   text-decoration: none;
 }
 
 .logo {
   font-family: "Raleway";
-  font-style: normal;
+  font-weight: 800;
   color: var(--body-text);
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
 
-  text-decoration: none;
+  
   text-transform: uppercase;
 }
 .logo-part {
@@ -45,24 +68,58 @@ CSS .header-links:hover,
   list-style-type: none;
 }
 .header-links {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+
   color: var(--body-text);
+cursor: pointer;
   text-decoration: none;
 }
 .header-links:hover {
   color: var(--primary-pressed-state);
 }
-.adress-list a {
-  text-decoration: none;
+
+.adress-items { 
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: inherit;
+  color: var(--adress-text-color);
 }
-.adress-items {
-  color: var(--body-text);
+.adress-items:hover{
+  color: var(--primary-pressed-state);
+
+}
+.adress-items:focus{
+  color: var(--primary-pressed-state);
+
 }
 
+
+
+
+
+
 /* Main */
+
+
+
+
+
 .hero {
   background-color: var(--body-text);
 }
 .hero-header {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
   color: var(--primary-accent-color);
 }
 .button {
@@ -70,12 +127,83 @@ CSS .header-links:hover,
   color: var(--primary-accent-color);
 }
 .btn-primary {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  cursor: pointer;
+  
   background: var(--primary-brand);
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background: var(--primary-pressed-state);
 }
+
+.deck-header{
+  
+font-size: 20px;
+line-height: 1.2;
+
+letter-spacing: 0.02em;
+
+}
+.desk-text{
+font-size: 16px;
+line-height: 1.5;
+
+
+letter-spacing: 0.02em;
+
+
+}
+.our-team {
+  background-color: var(--filter-selectors-bg);
+}
+.section-header {
+  
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.team-member-card{
+  background-color: var(--primary-accent-color);
+  
+}
+
+.member-name{
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+
+
+letter-spacing: 0.02em;
+}
+.member-position{
+  
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+
+letter-spacing: 0.02em;
+}
+
+
+
+
 /* Footer */
+
+
+
 .footer-studio {
   background-color: var(--body-text);
   color: var(--primary-accent-color);
@@ -87,8 +215,33 @@ CSS .header-links:hover,
 
   text-decoration: none;
   text-transform: uppercase;
+
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.2;
+
+
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
+.footer-text{
+  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  letter-spacing: 0.02em;
+}
+
+
+
 /* Portfolio */
+
+
+
+
 .fillter-items {
   list-style-type: none;
   text-decoration: none;
@@ -114,3 +267,20 @@ CSS .header-links:hover,
   color: var(--primary-accent-color);
   background-color: var(--primary-pressed-state);
 }
+.service h2{
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+
+color: var(--body-text);
+
+}
+.service p{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: var(--body-text);
+
+letter-spacing: 0.02em;
+}
+
